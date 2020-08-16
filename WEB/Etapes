@@ -1,0 +1,5 @@
+1. Créer le Dockerfile
+2. build l'image -> docker build -t webserver:latest .
+3. run l'image dans un container -> docker run -itd webserver:latest
+4.trouver l'adresse ip du docker -> docker inspect charming_raman | grep IP
+5. créer un container qui va utiliser le localhost -> docker run -itd -p 80:80 webserver:latest

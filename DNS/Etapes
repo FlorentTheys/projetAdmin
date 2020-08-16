@@ -1,0 +1,20 @@
+1) se log à docker
+docker login --username=yourhubusername
+
+2) build l'image
+docker build -t dns .
+
+3)tag l'image à push sur le dockerhub
+docker tag dns theysflorent/projet_admin:dns
+
+4) push l'image sur le hub
+docker push theysflorent/projet_admin:dns
+
+5) pull l'image sur le vps
+docker pull theysflorent/projet_admin:dns
+
+6)run l'image
+docker run -t -d -p -v 53:53 config:/etc/bind ba2d627efe01
+
+8) run l'image employé pour vérifier
+docker run -it 5be7cc63ec5f

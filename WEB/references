@@ -1,0 +1,8 @@
+configuration des différents domaines sur un même serveur
+https://linuxize.com/post/how-to-set-up-nginx-server-blocks-on-debian-9/
+
+config global
+https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+
+les logs avec nginx
+https://www.journaldev.com/26756/nginx-access-logs-error-logs#how-to-enable-nginx-access-log
