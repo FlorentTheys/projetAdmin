@@ -1,14 +1,13 @@
 $ORIGIN theys.ephec-ti.be.
 $TTL    604800
-@       IN      SOA     ns1.theys.ephec-ti.be. admin.theys.ephec-ti.be. (
+@       IN      SOA     ns.theys.ephec-ti.be. admin.theys.ephec-ti.be. (
                      2006020201 ; Serial
                          604800 ; Refresh
                           86400 ; Retry
                         2419200 ; Expire
                          604800); Negative Cache TTL
 ; SOA - NS
-@               IN      NS      ns.wt1-6.ephec-ti.be.
-@               IN      MX      10 mail
+@               IN      NS      ns.theys.ephec-ti.be.
 
 ; SOA - A
 ns              IN      A       51.178.40.200

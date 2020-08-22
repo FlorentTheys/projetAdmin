@@ -14,7 +14,7 @@ docker push theysflorent/projet_admin:dns
 docker pull theysflorent/projet_admin:dns
 
 6)run l'image
-docker run -t -d -p -v 53:53 config:/etc/bind ba2d627efe01
+docker run -t -d -p 53:53 fb646788164b
 
 8) run l'image employé pour vérifier
 docker run -it 5be7cc63ec5f
