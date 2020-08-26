@@ -27,3 +27,6 @@ RUN ln -s /etc/nginx/sites-available/www.theys.ephec-ti.be.conf /etc/nginx/sites
 
 #Ecoute sur le port 80
 EXPOSE 80
+
+
+CMD ["nginx", "-g", "daemon off;"]
