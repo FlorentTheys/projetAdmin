@@ -4,6 +4,7 @@ FROM ubuntu:latest
 #Installe ngninx sur l'image
 RUN apt-get update
 RUN apt-get install -y nginx
+RUN apt-get install -y php-fpm php-mysql
 
 #créé nos dossiers des différents domaines
 RUN mkdir -p /var/www/public/html
@@ -27,6 +28,5 @@ RUN ln -s /etc/nginx/sites-available/www.theys.ephec-ti.be.conf /etc/nginx/sites
 
 #Ecoute sur le port 80
 EXPOSE 80
-
 
 CMD ["nginx", "-g", "daemon off;"]
